@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/"
+title = "Saalloye VPN"
+description = "A mobile VPN companion interface for choosing a country, reviewing connection status, and managing settings and help. The current build is interface-only and does not establish a VPN tunnel."
+version = "1.0.0"
+id = "artifacts/saalloye-vpn"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/" ]
+localPort = 18527
+
+[services.development]
+run = "pnpm --filter @workspace/saalloye-vpn run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/saalloye-vpn", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/saalloye-vpn", "run", "serve" ]
+
+[services.env]
+PORT = "18527"
+BASE_PATH = "/"

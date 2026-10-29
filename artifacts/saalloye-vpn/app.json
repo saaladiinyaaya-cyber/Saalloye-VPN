@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Saalloye VPN",
+    "slug": "saalloye-vpn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "saalloye-vpn",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#07111F"
+    },
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {},
+    "web": {
+      "favicon": "./assets/images/icon.png",
+      "output": "static"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

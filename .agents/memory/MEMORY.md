@@ -1,0 +1,1 @@
+- [VPN connection honesty](vpn-connection-honesty.md) — Never show Saalloye VPN as connected without a verified real tunnel; country choices are preferences until live servers exist.
